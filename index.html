@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AG Hair Cuts — Barber Shop, Swiss Ave, Dallas, TX</title>
+<meta name="description" content="AG Hair Cuts is a classic barber shop and hair salon at 2700 Swiss Ave #300, Dallas. Men's cuts, fades, beard trims. Call to book your chair.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#b33030;--navy:#1d2f52;--cream:#f6efe2;--paper:#efe3cb;--ink:#23201b;--mut:#6e6252}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Libre Franklin',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+h1,h2,h3,.osw{font-family:'Oswald',sans-serif;text-transform:uppercase}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 5%}
+.btn{display:inline-block;padding:13px 26px;font-weight:700;font-size:.92rem;border-radius:4px;transition:transform .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 8px 20px rgba(179,48,48,.3)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-line{border:2px solid var(--navy);color:var(--navy)}
+.polebar{height:14px;background:repeating-linear-gradient(45deg,var(--red) 0 18px,#fff 18px 36px,var(--navy) 36px 54px,#fff 54px 72px);background-size:102px 102px;animation:pole 2.8s linear infinite}
+@keyframes pole{to{background-position:102px 0}}
+header{position:sticky;top:0;z-index:50;background:rgba(246,239,226,.96);border-bottom:3px double var(--navy)}
+.hbar{max-width:1100px;margin:0 auto;padding:12px 5%;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:13px}
+.seal{width:50px;height:50px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-family:'Oswald';font-weight:700;font-size:1.15rem;border:3px solid var(--red);outline:2px solid var(--navy)}
+.logo h1{font-size:1.6rem;line-height:1;letter-spacing:.03em}
+.logo h1 em{font-style:normal;color:var(--red)}
+.logo small{display:block;font-family:'Libre Franklin';font-size:.58rem;letter-spacing:.3em;color:var(--mut);text-transform:uppercase;margin-top:3px;font-weight:600}
+.hero{text-align:center;padding:80px 0 74px;background:radial-gradient(60% 90% at 50% 0%,#fff8ea,var(--cream) 70%);border-bottom:3px double var(--navy)}
+.stars{color:var(--red);letter-spacing:.5em;font-size:.95rem;margin-bottom:16px}
+.kicker{color:var(--red);font-weight:700;letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;margin-bottom:12px}
+.hero h2{font-size:clamp(2.6rem,7vw,4.4rem);line-height:1.04;font-weight:700}
+.hero h2 .rd{color:var(--red)}
+.hero h2 .nv{color:var(--navy)}
+.hero p{max-width:580px;margin:18px auto 0;color:var(--mut)}
+.cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.frame{display:inline-block;margin-top:34px;border:2px solid var(--navy);padding:10px 22px;background:#fff;font-weight:600;font-size:.9rem;box-shadow:6px 6px 0 rgba(29,47,82,.18)}
+section{padding:66px 0}
+.kick2{text-align:center;color:var(--red);font-weight:700;letter-spacing:.3em;text-transform:uppercase;font-size:.72rem;margin-bottom:8px}
+h3.sec{font-size:clamp(2rem,5vw,3rem);text-align:center;line-height:1.05;font-weight:600}
+.sub{text-align:center;color:var(--mut);max-width:540px;margin:10px auto 38px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:18px}
+.card{background:#fff;border:1.5px solid #d9c9a8;border-top:6px solid var(--navy);padding:26px 22px;transition:transform .2s}
+.card:nth-child(3n+2){border-top-color:var(--red)}
+.card:hover{transform:translateY(-6px)}
+.card .ic{font-size:2.2rem;display:block;margin-bottom:12px}
+.card h4{font-family:'Oswald';font-size:1.35rem;text-transform:uppercase;letter-spacing:.03em;margin-bottom:6px}
+.card p{font-size:.92rem;color:var(--mut)}
+.strip{background:var(--navy);color:#e8e2d2}
+.strip .grid{gap:26px}
+.trad{text-align:center;padding:6px}
+.trad .ic{font-size:2.4rem;display:block;margin-bottom:10px}
+.trad h4{color:#fff;font-size:1.1rem;letter-spacing:.06em;margin-bottom:5px}
+.trad p{font-size:.9rem;color:#b9c2d6}
+.visit{background:#fff;border:3px double var(--navy);padding:42px 30px;text-align:center}
+.visit p{color:var(--mut);margin:6px 0}
+.visit .addr{color:var(--ink);font-weight:700;font-size:1.06rem}
+footer{background:#141c30;color:#93a0ba;text-align:center;padding:28px 5% 96px;font-size:.85rem}
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,28,48,.97)}
+.stickybar a{flex:1;text-align:center;padding:13px;font-weight:700;color:#fff;border-radius:4px}
+.stickybar .c{background:var(--red)}
+.stickybar .m{background:var(--navy);border:1px solid #47619c}
+@media(max-width:640px){.stickybar{display:flex}.hbar .btn{display:none}}
+</style>
+</head>
+<body>
+<div class="polebar"></div>
+<header>
+  <div class="hbar">
+    <div class="logo">
+      <div class="seal">AG</div>
+      <div><h1>AG <em>Hair Cuts</em></h1><small>Barber Shop · Hair Salon · Dallas</small></div>
+    </div>
+    <a class="btn btn-red" href="tel:+14699262949">📞 Book a Chair</a>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="stars">✂ — ✦ — ✂ — ✦ — ✂</div>
+    <p class="kicker">2700 Swiss Ave #300 · Dallas, TX</p>
+    <h2>A <span class="rd">Real</span> Barbershop,<br>The <span class="nv">Classic</span> Way</h2>
+    <p>AG Hair Cuts is an old-school barber shop and hair salon on Swiss Avenue — sharp men's cuts, clean fades and proper beard work, no fuss and no shortcuts.</p>
+    <div class="cta">
+      <a class="btn btn-red" href="tel:+14699262949">📞 +1 469-926-2949</a>
+      <a class="btn btn-line" href="#services">💈 See Services</a>
+      <a class="btn btn-navy" href="https://www.google.com/maps/search/?api=1&query=AG+Hair+Cuts+Dallas+TX">🗺️ Directions</a>
+    </div>
+    <div><span class="frame">✂️ Walk-ins welcome to ask — call ahead to grab your chair</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <p class="kick2">Off the Board</p>
+    <h3 class="sec">Barber Services</h3>
+    <p class="sub">Straightforward services, done right. Call the shop for the full board and prices.</p>
+    <div class="grid">
+      <div class="card"><span class="ic">💈</span><h4>Men's Haircuts</h4><p>Classic and modern cuts, tailored to your head shape and how you wear it.</p></div>
+      <div class="card"><span class="ic">🪒</span><h4>Fades &amp; Tapers</h4><p>Skin fades, military fades and clean tapers — blended smooth, lined sharp.</p></div>
+      <div class="card"><span class="ic">🧔</span><h4>Beard Trims</h4><p>Shape-ups and beard trims that keep the lines crisp and the growth tidy.</p></div>
+      <div class="card"><span class="ic">✂️</span><h4>Kids &amp; Family Cuts</h4><p>Patient, friendly cuts for the younger gentlemen too.</p></div>
+      <div class="card"><span class="ic">💆</span><h4>Scalp Treatment</h4><p>Ask about scalp treatments for a healthier head of hair.</p></div>
+      <div class="card"><span class="ic">🧴</span><h4>Facials</h4><p>A proper clean-up for your face to match the fresh cut.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="wrap">
+    <p class="kick2" style="color:#e08a8a">The House Rules</p>
+    <h3 class="sec" style="color:#fff;margin-bottom:36px">How a Barbershop Should Be</h3>
+    <div class="grid">
+      <div class="trad"><span class="ic">🪑</span><h4>Take a Seat</h4><p>A real chair, a real conversation, and a cut that takes the time it takes.</p></div>
+      <div class="trad"><span class="ic">🔪</span><h4>Sharp Tools, Sharp Lines</h4><p>Clean equipment and steady hands — the details are the whole job.</p></div>
+      <div class="trad"><span class="ic">🤝</span><h4>Leave Looking Right</h4><p>A final check in the mirror before the cape comes off. Every time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="kick2">Know Before You Go</p>
+    <h3 class="sec">Shop Talk</h3>
+    <p class="sub">A few words from the floor of the shop.</p>
+    <div class="grid">
+      <div class="card"><span class="ic">📞</span><h4>Call for a Chair</h4><p>Chairs fill up — a quick call to the shop is the surest way to get your spot.</p></div>
+      <div class="card"><span class="ic">🪮</span><h4>Come As You Are</h4><p>Hat hair, helmet hair, three-weeks-overdue hair — the shop has seen it and fixed it.</p></div>
+      <div class="card"><span class="ic">⭐</span><h4>Ask for the Works</h4><p>Cut, beard trim and a facial clean-up: leave the shop looking like the best version of you.</p></div>
+    </div>
+    <div style="max-width:760px;margin:44px auto 0;text-align:center">
+      <h3 class="sec" style="font-size:1.9rem;margin-bottom:10px">Swiss Avenue's Neighborhood Barber</h3>
+      <p style="color:var(--mut)">Every neighborhood needs a barber shop that feels like it has always been there — and on Swiss Avenue in Dallas, that's AG Hair Cuts. Inside suite 300 you'll find the familiar rhythm of a classic shop: clippers buzzing, straight talk, and barbers who remember how you like your fade. From military-sharp tapers to a tidy trim before a big day, the work is honest and the lines are clean.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <p class="kick2">From the Chair</p>
+    <h3 class="sec">What Regulars Know</h3>
+    <p class="sub">The unwritten guide to getting your best cut at AG.</p>
+    <div class="grid">
+      <div class="card"><span class="ic">🗓️</span><h4>Keep a Rhythm</h4><p>Fades look sharpest on a two-to-three-week rhythm — book your next chair before you leave.</p></div>
+      <div class="card"><span class="ic">🖼️</span><h4>A Photo Helps</h4><p>Show your barber the cut you want. A picture settles what words like "short-ish" cannot.</p></div>
+      <div class="card"><span class="ic">🧔</span><h4>Beard + Cut Combo</h4><p>The full works in one sitting: cut up top, lines cleaned up below. Ask when you call.</p></div>
+    </div>
+    <div style="max-width:760px;margin:40px auto 0;text-align:center">
+      <p style="color:var(--mut)">First visit? Tell the barber it's your first time in the chair — they'll walk you through the options, from a conservative trim to a full restyle, and make sure the cut suits how your hair actually grows.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="visit">
+      <p class="kick2">Visit the Shop</p>
+      <h3 class="sec" style="margin-bottom:14px">Find AG Hair Cuts</h3>
+      <p class="addr">📍 2700 Swiss Ave #300, Dallas, TX 75204</p>
+      <p>📞 <a href="tel:+14699262949" style="color:var(--red);font-weight:700">+1 469-926-2949</a></p>
+      <p>Barber Shop · Hair Salon</p>
+      <div class="cta" style="margin-top:22px">
+        <a class="btn btn-red" href="tel:+14699262949">📞 Call the Shop</a>
+        <a class="btn btn-navy" href="https://www.google.com/maps/search/?api=1&query=AG+Hair+Cuts+Dallas+TX">🗺️ Open in Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 56px">
+  <div class="wrap">
+    <div class="grid">
+      <div class="card"><span class="ic">🏛️</span><h4>Swiss Ave Landmark</h4><p>Suite 300 at 2700 Swiss Avenue — a steady fixture of the neighborhood's daily rhythm.</p></div>
+      <div class="card"><span class="ic">🎖️</span><h4>Military Fades Welcome</h4><p>Regulation-sharp fades and tapers are a house specialty — ask when you book your chair.</p></div>
+      <div class="card"><span class="ic">☕</span><h4>The Full Reset</h4><p>Cut, beard work and a facial clean-up: walk out feeling like payday Friday.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:0 0 60px">
+  <div class="wrap" style="text-align:center">
+    <p style="color:var(--mut);max-width:680px;margin:0 auto">Passing through the Swiss Avenue neighborhood? The shop is an easy stop — call from wherever you are in Dallas, and by the time you've parked, your barber will be ready. That's how a neighborhood barbershop earns its regulars. Fathers bring sons, sons grow up and bring theirs, and the chair at AG Hair Cuts keeps turning — one clean cut at a time, right here in the heart of Dallas, Texas.</p>
+  </div>
+</section>
+
+<footer>Sample website prototype made for demonstration — not the official website of this business.<br><b>AG Hair Cuts</b> · 2700 Swiss Ave #300, Dallas, TX 75204</footer>
+<div class="polebar"></div>
+
+<div class="stickybar">
+  <a class="c" href="tel:+14699262949">📞 Call</a>
+  <a class="m" href="https://www.google.com/maps/search/?api=1&query=AG+Hair+Cuts+Dallas+TX">🗺️ Directions</a>
+</div>
+</body>
+</html>
